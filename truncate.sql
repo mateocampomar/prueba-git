@@ -1,0 +1,16 @@
+TRUNCATE `compra`;
+TRUNCATE `compra_productos`;
+TRUNCATE `consignacion`;
+TRUNCATE `consignacion_productos`;
+TRUNCATE `estado_cuenta`;
+TRUNCATE `movimientos_productos`;
+TRUNCATE `nc_productos`;
+TRUNCATE `nota_de_credito`;
+TRUNCATE `orden_produccion`;
+TRUNCATE `orden_produccion_productos`;
+TRUNCATE `recibo`;
+TRUNCATE `recibo_productos`;
+TRUNCATE `ventas_directa`;
+TRUNCATE `ventas_directa_productos`;
+TRUNCATE `ventas_oficina`;
+TRUNCATE `ventas_oficina_productos`;

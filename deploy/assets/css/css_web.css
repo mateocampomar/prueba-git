@@ -1,0 +1,329 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: Tahoma;
+	height: 100%;
+}
+
+.top_menu {
+	overflow:visible; height: 24px; background-color: black; color: white; font-style: italic;
+}
+
+h1 {
+	font-size: 50pt;
+	padding-top: 50px;
+	font-weight: normal;
+}
+
+/*h1 span {
+	display: block;
+	font-size: 16pt;
+	color: #ccc;
+}*/
+
+header {
+	position: fixed;
+	top: 0;
+	z-index: 5;
+	width: 100%;
+}
+
+header .logo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+header h1 {
+	position: absolute;
+	top: 5px;
+	left: 110px;
+	font-size: 30px;
+	margin: 0;
+	padding: 0;
+}
+
+footer {
+	height: 100px;
+	background: black;
+}
+
+#shoppingcart_quickDisplay {
+	position: absolute;
+	right: 15px;
+	top: -5px;
+	width: 350px;
+	list-style: none;
+	padding: 0;
+}
+
+#shoppingcart_quickDisplay li {
+	font-size: 8pt;
+	background-color: #fff;
+	margin: 5px 0;
+	padding: 10px;
+	position: relative;
+	top: 20px;
+	box-shadow: 2px 2px 20px black;
+}
+
+#shoppingcart_quickDisplay li img {
+	margin-right: 5px;
+}
+
+#shoppingcart_quickDisplay li h6 {
+	color: #999;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	position: relative;
+	top: -7px;
+}
+
+#shoppingcart_quickDisplay li p {
+	color: #000;
+	margin: 0;
+	font-size: 9pt;
+}
+
+#shoppingcart_quickDisplay li p.light {
+	color: #666;
+}
+
+.bgimage {
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+}
+
+.bgslider {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.bgslider  li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.bgslider  li img {
+	position: relative;
+}
+
+.bgimage .cart_container {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 2px;
+	width: 400px;
+}
+
+.bgimage h1 {
+	position: absolute;
+	left: 10px;
+	color: #fff;
+	text-shadow: 2px 2px 20px black;
+}
+
+.bgimage h1.center {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+}
+.bgimage h1.center span {
+	border: 1px solid white;
+	padding: 5px 15px;
+}
+
+.bgimage h2.center {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+.submenu {
+	position: absolute;
+	bottom: 50px;
+	padding: 0;
+	list-style: none;
+}
+
+.submenu li {
+	float: right;
+	margin: 0 30px;
+	background-image: url(../img/transparent-white-90.png);
+	padding: 20px 40px;
+	min-width: 200px;
+}
+
+.submenu li a {
+	font-size: 16pt;
+}
+
+.submenu li small {
+	color: #999;
+	font-style: italic;
+	font-size: smaller;
+}
+
+.select_producto {
+	overflow: hidden;
+	list-style-type: none;
+	padding: 5px;
+}
+
+.select_producto li {
+	border: 2px solid #fff;
+	float: left;
+	margin-right: 5px;
+	padding: 1px;
+	cursor: pointer;
+	border-radius: 26px;
+}
+
+.select_producto li img {
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+}
+
+.main_menu {
+	float: left;
+	margin: 0px;
+	margin-top: 5px;
+	padding: 0;
+	list-style: none;
+}
+
+.main_menu li {
+	float: right;
+	margin-left: 10px;
+	font-size: 8pt;
+}
+
+.main_menu li a {
+	color:	white;
+	text-decoration: none;
+}
+
+.cart_menu {
+	position: absolute;
+	right: 5px;
+	font-size: 8pt;
+}
+
+.cart_menu img {
+	position: relative;
+	top: 2px;
+	width: 23px;
+	height: 18px;
+	margin-right: 10px;
+}
+
+.cart_menu_text {
+	position: relative;
+	top: -2px;
+}
+
+.cart_menu a.checkout {
+	color: white;
+	padding: 5px 5px;
+	text-decoration: none;
+	text-decoration: none;
+}
+
+.large_photo {
+	width: 100%;
+}
+
+#ficha_tecnica {
+	position: absolute;
+	background-color: #fff;
+	width: 100%;
+	/overflow: hidden;
+}
+
+.bdycontainer {
+	width: 95%;
+	margin: 10px auto;
+}
+
+.shipdetails {
+	font-size: 8pt;
+	color: #333;
+}
+
+.shipdetails input[type="text"] {
+	font-size: 10pt;
+	border-radius: 2px;
+	padding: 5px;
+	width: 350px;
+	border: 1px solid #ccc;
+	position: relative;
+	top: -4px;
+
+}
+
+ul.shipping {
+	float:right;
+	min-width: 250px;
+	list-style: none;
+	margin: 0;
+}
+
+.orderdetails {
+	font-size: 11pt;
+}
+
+.orderdetails .product {
+	font-size: 13pt;
+}
+
+.orderdetails input[type="text"] {
+	border: 1px solid #999;
+	border-radius: 2px;
+	position: relative;
+	top: -3px;
+	left: 2px;
+}
+
+.orderdetails .pricechange {
+	color: #999900;
+	background-color: #ffffcc;
+	border-radius: 3px;
+	font-size: 8pt;
+	padding: 1px 2px;
+	position: relative;
+	top: 3px;
+}
+
+.orderdetails tr.producto td {
+	padding: 10px;
+}
+
+.orderdetails tr.producto:hover {
+	background-color: #eee;
+}
+
+.orderdetails h2 {
+	margin: 0;
+}
+
+.orderdetails ul {
+	margin: 0;
+	padding: 0;
+}
+
+.img-container {
+	background-position: center center;
+	background-size: auto 100%;
+	height: 100%;
+	border: 1px solid black;
+}

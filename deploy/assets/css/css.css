@@ -1,0 +1,802 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Trebuchet MS;
+	background-color: #f9f9f9;
+	display: block;
+	position:absolute;
+	height:auto;
+	bottom:0;
+	top:0;
+	left:0;
+	right:0;
+}
+
+h1
+{
+	margin: 0;
+	margin-bottom: 0px;
+	padding: 0;
+	font-size: 15pt;
+	color: black;
+	font-weight: normal;
+	color: #333;
+	padding: 15px 10px;
+	background-image: url(../img/bg-h1.png);
+	background-color: #f1efeb;
+	color: #999;
+}
+
+h1 strong {
+	color: #666;
+	font-size: 20pt;
+}
+
+h1 span {
+	font-size: 9pt;
+	color: #ccc;
+	float: right;
+}
+
+h2
+{
+	margin: 0;
+	padding: 0;
+	font-size: 10pt;
+	background-color: #f1efeb;
+	padding: 10px;
+	color: #666;
+}
+
+#search {
+	position: relative;
+	top: 6px;
+	right: 10px;
+	border: 1px solid #999;
+	border-radius: 2px;
+	padding: 2px 4px;
+}
+
+small {
+	color: #999;
+}
+
+header {
+	box-shadow: 1px 1px 5px #999;
+	background-color: #8a8073;
+	height: 40px;
+	position: relative;
+}
+.message-box {
+	background-color: #f9edbe;
+	padding: 10px 0;
+	border-bottom: 1px solid #cccc66;
+	border-top: 1px solid #cccc66;
+	margin-bottom: 20px;
+}
+
+.message-box .flash_alert {
+	padding: 4px 10px;
+	margin: 0 auto;
+	font-size: 11pt;
+	border: 0px solid #f0c36d;
+	border-radius: 5px;
+	text-align: center;
+	color: #666666;
+}
+
+.message-box-ok {
+	background-color: #ccffcc;
+	padding: 10px 0;
+	border-bottom: 1px solid #339933;
+	border-top: 1px solid #339933;
+	margin-bottom: 20px;
+}
+
+.message-box-ok .flash_ok {
+	padding: 4px 10px;
+	margin: 0 auto;
+	font-size: 11pt;
+	border: 0px solid #f0c36d;
+	border-radius: 5px;
+	text-align: center;
+	color: #666666;
+}
+
+.flash_alert .clickable {
+	display: none;
+}
+
+.message-box .flash_alert strong {
+	font-size: larger;
+}
+
+header .logo {
+	padding: 0px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+.menu_header {
+	list-style: none;
+	margin: 0;
+	overflow: auto;
+	padding: 0 5px;
+}
+
+.menu_header li {
+	float: right;
+	border-right: 1px solid #8a8073;
+}
+
+.menu_header li a {
+	color: #000;
+	height: 40px;
+	font-size: 9pt;
+	text-decoration: none;
+	display: block;
+	background-color: #9b9287;
+	color: #fff;
+}
+
+.menu_header li a span {
+	margin: 15px;
+	position: relative;
+	top: 13px;	
+}
+
+.menu_header li a span .ico-config {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 8px;
+	left: -10px;
+}
+
+.menu_header li a:hover, .menu_header li a.selected {
+	background-color: #645c53;
+}
+
+.menu_header li a.selected {
+	font-weight: bold;
+	text-decoration: underline !important;
+}
+
+.cierre-de-ejercicio {
+	float: left;
+	font-size: 9pt;
+	padding: 10px;
+	color: red;
+}
+
+.menu {
+	list-style: none;
+	margin: 0;
+	margin-top: 5px;
+	height: 15px;
+	overflow: visible;
+	padding: 5px;
+}
+
+.menu li {
+	float: right;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+.menu li a {
+	color: #000;
+	font-size: 9pt;
+	text-decoration: none;
+}
+
+.menu li a.selected {
+	font-weight: bold;
+	text-decoration: underline !important;
+}
+
+.menu li span {
+	color: #999;
+	position: relative;
+	top: -3px;
+}
+
+.menu li a:hover {
+	text-decoration: underline;
+}
+
+.menu .menu_alert_bubble {
+	background-color: red;
+	color: #fff;
+	padding: 2px 5px;
+	border-radius: 8px;
+	font-size: 8pt;
+	margin-left: 3px;
+}
+
+#selectLocal {
+	position: relative;
+	top: -5px;
+	width: 100px;
+	padding: 5px;
+	font-size: 12px;
+	width: 200px;
+}
+
+.form_errors {
+	/*border: 2px solid red;*/
+	position: relative;
+	top: -10px;
+}
+
+.form_errors p {
+	font-size: 10pt;
+	color: red;
+	margin: 10px;
+}
+
+.canvas
+{
+	border: 1px solid #ccc;
+	margin: 10 auto;
+	box-shadow: 1px 1px 5px #ccc;
+	padding: 0px;
+	background-color: #fff;
+	border-radius: 2px;
+	margin-top: 20px;
+}
+
+.canvas .canvas-body {
+	padding: 10px;
+}
+
+.canvas .float-right {
+	float:right;
+	position: relative;
+	top: 10px;
+	right: 5px;
+}
+
+.canvas-footer {
+	margin: 10px auto;
+	padding: 10px;
+	width: 95%;
+	font-size: 9pt;
+}
+
+.canvas.facturas	{ border-top: 5px solid #ff9900; }
+.canvas.ventas		{ border-top: 5px solid #009900; }
+.canvas.oficina		{ border-top: 5px solid #cc33cc; }
+.canvas.compras		{ border-top: 5px solid #cccccc; }
+.canvas.nc			{ border-top: 5px solid #ffff00; }
+.canvas.venta_directa	{ border-top: 5px solid red; }
+.canvas.liquidacion { border-top: 5px solid #66cccc; }
+.canvas.charts		{ border-top: 5px solid #000000; }
+
+.canvas .fecha_right {
+	float: right;
+	position: relative;
+	left: -10px;
+	top: 15px;
+	color: #666;
+}
+
+.canvas .datos {
+	margin-top: 5px;
+	font-size: 9pt;
+	color: #999;
+}
+
+.canvas .datos .actions {
+	float: right;
+}
+
+.canvas table {
+	margin: 0;
+}
+
+.canvas table td {
+	font-size: 10pt;
+	color: #333;
+}
+
+
+.canvas table td .large {
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+.canvas table .totales td {
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+.canvas table td input, .canvas table td textarea {
+	font-size: 13pt;
+	padding: 5px;
+	border-radius: 3px;
+	border-top: 2px solid #999999;
+	border-left: 2px solid #999999;
+	border-right: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+	margin: 2px;
+}
+
+.canvas table td select {
+	margin: 15px 0;
+	min-width: 200px;
+}
+
+.canvas .submit {
+	text-align: right;
+	padding: 10px 0;
+	font-size: 8pt;
+}
+
+.canvas.anulado {
+	border: 1px red solid !important;
+}	
+
+.canvas.anulado .anulado {
+	text-align: center;
+	color: red;
+	font-size: 25pt;
+	border-bottom: 1px solid red;
+	margin-bottom: 5px;
+	letter-spacing: 20px;
+}
+
+.canvas .footer_canvas {
+	text-align: right;
+	overflow: auto;
+}
+
+.canvas .footer_canvas table {
+		/*width: 100%;*/
+		border-collapse: collapse;
+}
+
+.canvas .footer_canvas table td {
+	text-align: right;
+	font-size: 10pt;
+	padding: 5px;
+}
+
+.canvas .footer_canvas table td.numb {
+	font-size: 10pt;
+}
+
+.canvas .footer_canvas table tr.total td {
+	font-weight: bold;
+}
+
+.canvas .footer_canvas table tr.total td {
+	border-top: 1px solid #999;
+}
+
+.canvas .footer_canvas table tr.total td.numb {
+	font-size: 13pt;
+}
+
+.stock {
+	width: 100%;
+}
+
+.trdark {
+	background-color: #f7f7f7;
+}
+
+.trlight {
+	background-color: #ffffff;
+}
+
+.trdark:hover, .trlight:hover {
+	background-color: #d9ebf5;
+}
+
+.canvas .stock td {
+	padding: 6px 5px;
+	font-size: 8pt;
+}
+
+.stock .header1 td {
+	color: #fff;
+	text-align: center;
+	padding: 5px;
+}
+
+.stock .header1 td a {
+	color: #fff;
+}
+
+.stock .header2 td {
+	padding: 5px;
+}
+
+.stock .light {
+	color: #999;
+}
+
+.stock .totales td {
+	border-top: 1px solid #ccc;
+	font-weight: bold;
+}
+
+.stock .unidades	{ text-align: center; font-size: 8pt; }
+.stock .monto		{ text-align: right; font-size: 8pt; }
+
+.stock .header1 .deposito	{ background-color: #0066cc; }
+.stock .deposito			{ background-color: #99ccff; }
+
+.stock .header1 .consignado	{ background-color: #ff9900; }
+.stock .consignado			{ background-color: #ffff99; }
+
+.stock .header1 .vendido	{ background-color: #009900; }
+.stock .vendido				{ background-color: #99ff99; }
+
+.stock .header1 .compras	{ background-color: #999999; }
+.stock .compras				{ background-color: #f1f1f1; }
+
+.stock .header1 .oficina	{ background-color: #cc33cc; }
+.stock .oficina				{ background-color: #ffccff; }
+
+.stock .header1 .total		{ background-color: #f1f1f1; }
+.stock .total				{ background-color: #f1f1f1; }
+
+.stock .header1 .venta_directa	{ background-color: #cc0000; }
+.stock .venta_directa			{ background-color: #ffcccc; }
+
+
+.resumen p {
+	color: #999;
+	font-weight: normal;
+	font-size: 9pt;
+}
+
+.resumen .item {
+	padding: 0 10px;
+	width: 150px;
+	font-size: 15pt;
+	text-align: right;
+}
+
+.resumen h3 {
+	color: #999;
+	text-transform: uppercase;
+	font-size: 8pt;
+	border-bottom: 1px solid #999;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+
+.anulada {
+	color: red;
+	letter-spacing: 3px;
+	margin-left: 10px;
+	font-size: 7pt;
+	padding: 1px 5px;
+	text-decoration: line-through;
+}
+
+.textlabelalert {
+	color: #fff;
+	margin-left: 10px;
+	font-size: 7pt;
+	padding: 4px 6px;
+	border-radius: 2px;
+	background-color: #f0c36d;
+}
+
+.textlabelConsignados {
+	color: #fff;
+	margin-left: 10px;
+	font-size: 7pt;
+	padding: 4px 6px;
+	border-radius: 2px;
+	background-color: #ff9900;
+}
+
+.textlabelConsignados a {
+	color: #000;
+	margin-left: 4px;
+	font-size: 7pt;
+	padding: 3px 6px;
+	border-radius: 2px;
+	background-color: #f1f1f1;
+	position: relative;
+	left: 5px;
+	top: 0px;
+}
+
+.textlabelNC {
+	color: #fff;
+	margin-left: 10px;
+	font-size: 7pt;
+	padding: 4px 6px;
+	border-radius: 2px;
+	background-color: #e9d130;
+}
+
+.textlabelNC a {
+	color: #7c6f16;
+	margin-left: 4px;
+	font-size: 7pt;
+	padding: 3px 6px;
+	border-radius: 2px;
+	background-color: #fbf2b9;
+	position: relative;
+	left: 5px;
+	top: 0px;
+}
+
+.textlabelVentasInformadas {
+	color: #fff;
+	margin-left: 10px;
+	font-size: 7pt;
+	padding: 4px 6px;
+	border-radius: 2px;
+	background-color: #16a765;
+}
+
+.textlabelConRecibo {
+	color: #fff;
+	margin-left: 10px;
+	font-size: 7pt;
+	padding: 4px 6px;
+	border-radius: 2px;
+	background-color: #ccc;	
+}
+
+.textlabelConRecibo a {
+	color: #000;
+	margin-left: 4px;
+	font-size: 7pt;
+	padding: 3px 6px;
+	border-radius: 2px;
+	background-color: #f1f1f1;
+	position: relative;
+	left: 5px;
+	top: 0px;
+}
+
+.canvas .info textarea {
+	font-size: inherit;
+	width: 100%;
+	height:150px;
+}
+
+.canvas .info {
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.canvas hr {
+
+}
+
+.canvas .submit {
+
+}
+
+form {
+	margin-bottom: 0;
+}
+
+.canvas .info td {
+	font-size: 13pt;
+	vertical-align: bottom;
+	padding: 5px 10px 5px 0;
+}
+
+.info td.small {
+	font-size: 7pt;
+	text-transform: uppercase;
+}
+
+.info td.detalle {
+	vertical-align:top;
+	position:relative;
+	top:5px;
+}
+
+.info p {
+	text-align: justify;
+	font-size: 10pt;
+	color: #999;
+}
+
+.info td.medium {
+	font-size: 9pt;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.imprimir_logo {
+	margin-top: 10px;
+}
+
+.canvas .prodSelect {
+	margin-top: 10px;
+}
+
+.prodSelect td {
+	padding: 5px;
+}
+
+.prodSelect tr.title td {
+	/*font-weight: bold;*/
+	font-style:italic;
+	text-decoration: underline;
+}
+
+.flexigrid div.bDiv td div.currency-right {
+	padding: 0;
+	border: 0;
+	text-align: right;
+}
+
+.flexigrid div.bDiv td div.cantidad {
+	padding: 0;
+	border: 0;
+	text-align: center;
+}
+
+.detalle.on a {
+	display: none;
+}
+
+.detalle.off a {
+	display: inline;
+	font-size: 9pt;
+}
+
+.detalle.on textarea {
+	display:block;
+}
+
+.detalle.off textarea {
+	display: none;
+}
+
+#datepicker {
+	background: url(../img/ico-calendar.png) no-repeat;
+	background-position-x: 120px;
+	background-position-y: center;
+	width: 155px;
+}
+
+#search {
+	float: right;
+}
+
+.filtros .reset_filters {
+	float: right;
+	background-color: #999;
+	color: #fafafa;
+	border-radius: 5px;
+	font-size: 8pt;
+	position: relative;
+	right: 25px;
+	top: 8px;
+	padding: 3px 6px;
+	cursor: pointer;
+}
+
+.filtros ul {
+	list-style: none;
+	margin: 10px;
+	padding: 0;
+	overflow: auto;
+	background-color: #fafafa;
+	height: 41px;
+}
+
+.filtros ul li {
+	float: left;
+	color: #666;
+	font-size: 9pt;
+	padding: 6px 10px;
+	padding-right: 30px;
+}
+
+.filtros ul li.h2 {
+	padding: 0;
+	position: relative;
+	top: 5px;
+}
+
+.filtros ul li.h2 h2 {
+	background-color: inherit;
+}
+
+.filtros ul input[type="text"] {
+	padding: 5px 2px;
+	border-radius: 2px;
+	border-top: 2px solid #999999;
+	border-left: 2px solid #999999;
+	border-right: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+	margin: 2px;
+}
+
+.filtros ul input[type="text"]#datepicker {
+	width: 105px;
+	background-color: #fff;
+	background-position-x: 75px;
+}
+
+.filtros ul input[type="submit"] {
+	position: relative;
+	top: 5px;
+	padding: 5px 2px;
+}
+
+.thumbnail_container {
+	padding:0;
+	height:15px;
+}
+
+.thumbnail_container img {
+	position: relative;
+	top: -13px;
+}
+
+.productThumb50 {
+	width:40px;
+	height:40px;
+	border-radius:20px;
+}
+
+.depositoOrigen span.texto, .depositoDestino span.texto {
+	background: red;
+	padding: 4px 20px;
+	padding-right: 10px;
+	color: white;
+	position: relative;
+}
+
+.depositoDestino span.texto {
+	background-color: green;
+}
+
+.depositoOrigen span.triangle-right, .depositoDestino span.triangle-right {
+	display: block;
+	position: absolute;
+	top: -7px;
+	right: -30px;
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-left: 30px solid red;
+	border-bottom: 20px solid transparent;
+}
+
+.depositoDestino span.triangle-right {
+	border-left: 30px solid green;
+}
+
+.btn-avanzar {
+	border:1px solid green;background-color:green;color:white; padding:10px;font-size:9pt;text-align:center;margin:10px 0;cursor:pointer;
+}
+
+table.avance {
+	width: 100%;
+	margin: 10px 0;
+	margin-bottom: 20px;
+}
+
+table.avance td {
+	border-bottom: 4px solid red;
+	text-align: center;
+	padding: 5px;
+	color: #ccc;
+	font-size: 9px;
+	font-weight: normal;
+}
+
+table.avance td.ok {
+	border-bottom: 4px solid green;
+	color: #000;
+	font-size: 14px;
+}

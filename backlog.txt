@@ -1,0 +1,27 @@
+Mantas Campomar 0.3
+
+- Estado de cuenta en locales. Registra Facturas, NC, Recibos, Compras y comisión en Venta Directa (nuevas y anulaciones).
+- IVA como en archivo de config.
+- Listado de productos en depósito con filtro por compra y eliminar productos del depósito.
+- Ordenes de Producción.
+- Manejo de proveedores.
+- Detalle en NC, venta directa, compras, etc.
+
+
+BUGS
+- Asociar el movimiento con la producción. Hoy si el mov tiene id de producción quiere decir que fue eliminado por esa prod y eso no está bien.
+
+FEATURES
+- Web
+- Flash alerts ok.
+- Mejorar las flash alerts pudiendo pasar un color o la instrucción de que no se cierre de forma automática.
+- Mejorar seguridad de movimientos_productos agregando estados a los movimientos.
+- Agregar venta directa en movimientos_productos.
+- Resumen del local proveedor.
+- Buscador fácil para los productos.
+- Login con diferentes usuarios.
+
+
+ALTER TABLE  `producto` ADD  `precioWeb` DECIMAL( 10, 2 ) NULL AFTER  `precioOficina`
+
+ALTER TABLE  `producto` ADD  `producto_tipo` VARCHAR( 50 ) NOT NULL AFTER  `nombre`
